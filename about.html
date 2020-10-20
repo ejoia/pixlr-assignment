@@ -8,7 +8,7 @@
       * {box-sizing: border-box}
       body, html {
         max-width: 1024px;
-        max-height: 900px;
+        height: 100%;
       }
       h1 {
         text-align: center;
@@ -29,11 +29,11 @@
       }          
       .banner-image {
         background-image: url("myBanner.jpg");
-        width: 1024px; 
-        height: 300;
+        background-size: cover;
+        width: 1024px;
         background-repeat: no-repeat;
-        position: fixed;
-        top: 0%;
+        background-position: center;
+        min-height: 20%;
       }
       .background-image {
         background-image: url("myBackground.jpg");
@@ -55,7 +55,7 @@
   <head>
   <body> 
 
-    <div class="banner-image"> </div>
+    <header class="banner-image"> </header>
     <div class="background-image">
       <div class="navbar">
         <a href="index.html"><img class="img" src="home.png"></a>
