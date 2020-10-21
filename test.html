@@ -31,6 +31,16 @@
         top: 0;
         clear: none;
       }
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
     </style>
   </head>
   <body>
@@ -40,9 +50,21 @@
     <div class="container">
       <img id="img" src="myBackground.jpg">
       <div class="navbar">
-        <a href="index.html"><img class="img" src="home.png"></a>
-        <a href="javascripts.html"><img class="img" src="javascripts.png"></a>
-        <a href="about.html"><img class="img" src="aboutMeClicked.png"></a>
+        <div class="row">
+          <div class="column">  
+            <a href="index.html"><img class="img" src="home.png"></a>
+          </div>  
+        </div>
+        <div class="row"> 
+          <div class="column">
+            <a href="javascripts.html"><img class="img" src="javascripts.png"></a>
+          </div>    
+        </div>
+        <div class="row">
+          <div class="column">
+            <a href="about.html"><img class="img" src="aboutMeClicked.png"></a>
+          </div>
+        </div>
       </div>
     </div>
   </body>
