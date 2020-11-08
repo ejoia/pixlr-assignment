@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {box-sizing: border-box}
+      body {
+        background-color: rgb(0, 0, 0);
+      }
+      #img {
+        width: 100%;
+        height: auto;
+      }
+      .container {
+        width: 100%;
+        overflow: auto;
+      }
+      .container a {
+        float: left;
+        /*padding: 16px;*/
+        width: 33.33%;
+      }
+      .container img {
+        display: block;
+        /*top: 0;*/
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img id="img" src="myBanner.jpg">
+    </header>
+    <div class="container">
+     <a href="index.html"><img class="img" src="home.png"></a>
+     <a href="javascripts.html"><img class="img" src="javascriptsClicked.png"></a>
+     <a href="about.html"><img class="img" src="aboutMe.png"></a>
+     <img id="img" src="myBackground.jpg">
+    </div>
+  </body>
+</html>
