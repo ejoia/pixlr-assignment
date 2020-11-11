@@ -26,18 +26,19 @@
       .container {
         position: relative;
         width: 100%;
-        /*overflow: auto;*/
       }
-      .container a {
+      .navbar {
+        width: 100%;
+      }
+      .navbar a {
         float: left;
+        padding: 10px;
         width: 33.33%;
       }
-      .container img {
+      .navbar img {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        clear: none;
-        float: left;
       }
       .background {
         position: relative;
@@ -57,9 +58,11 @@
       <img id="img" src="myBanner.jpg">
     </header>
     <div class="container">
-     <a href="index.html"><img src="home.png"></a>
-     <a href="javascripts.html"><img src="javascriptsClicked.png"></a>
-     <a href="about.html"><img src="aboutMe.png"></a>      
+     <div class="navbar"> 
+       <a href="index.html"><img src="home.png"></a>
+       <a href="javascripts.html"><img src="javascriptsClicked.png"></a>
+       <a href="about.html"><img src="aboutMe.png"></a>
+      </div>
       <div class="background">
        <img id="img" src="myBackground.jpg">
        <div class="box">
