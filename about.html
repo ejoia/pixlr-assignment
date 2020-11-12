@@ -17,7 +17,7 @@
         text-justify: auto;
       }
       h1 {
-        color: blue;
+        color: red;
         text-align: center;
       }
       #img {
@@ -91,11 +91,16 @@
     </div>
     <footer>
       <script>
-        var d = new date();
-        document.getElementById("demo").innerHTML = d.toDateString();
+        n = new Date();
+        y = n.getFullYear();
+        m = n.getMonth()/* + 1*/;
+        d = n.getDate();
+        monthArr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        m = monthArr[m];
+        document.getElementById("date").innerHTML = m + " " + d ", " + y; 
       </script>      
-      <p id="demo" style="margin:0;display:inline;float:left"> </p>
-      <p style="margin:0;display:inline;float:right" >Updated Oct. 2020</p>
+      <p id="date> </p>
+      <p>Updated Oct. 2020</p>
       <p>Author: eJo</>
     </footer>
   </body>
