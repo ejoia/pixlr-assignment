@@ -17,7 +17,7 @@
         text-justify: auto;
       }
       h1 {
-        color: blue;
+        color: red;
         text-align: center;
       }
       #img {
@@ -91,12 +91,12 @@
     </div>
     <footer>
       <script>
-        n = new Date();
-        y = n.getFullYear();
-        m = n.getMonth() + 1;
-        d = n.getDate();
-        monthArr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        m = monthArr[m];
+        var n = new Date();
+        var y = n.getFullYear();
+        var m = n.getMonth() + 1;
+        var d = n.getDate();
+        var monthArr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var m = monthArr[m];
         document.getElementById("date").innerHTML = m + " " + d ", " + y;
       </script>      
       <p id="date" style="color:white;"></p>
